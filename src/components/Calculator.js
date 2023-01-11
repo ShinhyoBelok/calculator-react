@@ -1,7 +1,12 @@
 import React from 'react';
 import './Calculator.css';
-// eslint-disable-next-line
+
 class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
     return (
       <>
