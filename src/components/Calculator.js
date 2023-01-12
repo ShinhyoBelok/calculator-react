@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import calculate from '../logic/calculate';
 import './Calculator.css';
@@ -9,14 +8,14 @@ class Calculator extends React.Component {
     this.state = {
       total: 0,
       next: null,
-      operation: null
+      operation: null,
     };
     this.btnClick = this.btnClick.bind(this);
   }
 
   btnClick(e) {
     const state = calculate(this.state, e.target.textContent);
-    this.setState(state)
+    this.setState(state);
   }
 
   render() {
@@ -25,7 +24,11 @@ class Calculator extends React.Component {
       <>
         <main className="container">
           <div className="calculator-container">
-            <div className="output">{total}{operation}{next}</div>
+            <div className="output">
+              {total}
+              {operation}
+              {next}
+            </div>
             <div className="buttons-container">
               <div className="graybg grayBtn">
                 <button type="button" onClick={this.btnClick}>AC</button>
@@ -57,7 +60,5 @@ class Calculator extends React.Component {
     );
   }
 }
-
-
 
 export default Calculator;
