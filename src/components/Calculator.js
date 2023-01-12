@@ -1,41 +1,54 @@
+/* eslint-disable */
 import React from 'react';
+import calculate from '../logic/calculate';
 import './Calculator.css';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: 0,
+      next: null,
+      operation: null
+    };
+    this.btnClick = this.btnClick.bind(this);
+  }
+
+  btnClick(e) {
+    const state = calculate(this.state, e.target.textContent);
+    this.setState(state)
   }
 
   render() {
+    const { total, next, operation } = this.state;
     return (
       <>
         <main className="container">
           <div className="calculator-container">
-            <div className="output">0</div>
+            <div className="output">{total}{operation}{next}</div>
             <div className="buttons-container">
               <div className="graybg grayBtn">
-                <button type="button">AC</button>
-                <button type="button">+/-</button>
-                <button type="button">%</button>
-                <button type="button">7</button>
-                <button type="button">8</button>
-                <button type="button">9</button>
-                <button type="button">4</button>
-                <button type="button">5</button>
-                <button type="button">6</button>
-                <button type="button">1</button>
-                <button type="button">2</button>
-                <button type="button">3</button>
-                <button type="button" className="span-two">0</button>
-                <button type="button">.</button>
+                <button type="button" onClick={this.btnClick}>AC</button>
+                <button type="button" onClick={this.btnClick}>+/-</button>
+                <button type="button" onClick={this.btnClick}>%</button>
+                <button type="button" onClick={this.btnClick}>7</button>
+                <button type="button" onClick={this.btnClick}>8</button>
+                <button type="button" onClick={this.btnClick}>9</button>
+                <button type="button" onClick={this.btnClick}>4</button>
+                <button type="button" onClick={this.btnClick}>5</button>
+                <button type="button" onClick={this.btnClick}>6</button>
+                <button type="button" onClick={this.btnClick}>1</button>
+                <button type="button" onClick={this.btnClick}>2</button>
+                <button type="button" onClick={this.btnClick}>3</button>
+                <button type="button" className="span-two" onClick={this.btnClick}>0</button>
+                <button type="button" onClick={this.btnClick}>.</button>
               </div>
               <div className="orangebg orangeBtn">
-                <button type="button">÷</button>
-                <button type="button">x</button>
-                <button type="button">-</button>
-                <button type="button">+</button>
-                <button type="button">=</button>
+                <button type="button" onClick={this.btnClick}>÷</button>
+                <button type="button" onClick={this.btnClick}>x</button>
+                <button type="button" onClick={this.btnClick}>-</button>
+                <button type="button" onClick={this.btnClick}>+</button>
+                <button type="button" onClick={this.btnClick}>=</button>
               </div>
             </div>
           </div>
@@ -44,5 +57,7 @@ class Calculator extends React.Component {
     );
   }
 }
+
+
 
 export default Calculator;
