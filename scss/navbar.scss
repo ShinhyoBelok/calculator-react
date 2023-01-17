@@ -4,7 +4,7 @@ $font-satisfy:'Satisfy', sans-serif;
 
 * {
   font-family: $font-satisfy;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 nav {
@@ -20,8 +20,5 @@ nav {
     list-style: none;
     display: flex;
     gap: 24px;
-    li {
-      color: white;
-    }
   }
 }
