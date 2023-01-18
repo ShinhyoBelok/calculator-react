@@ -1,10 +1,9 @@
-import React from "react";
-import Calculator from "../Calculator";
+import React from 'react';
 import renderer from 'react-test-renderer';
 import { render, screen, fireEvent } from '@testing-library/react';
+import Calculator from '../Calculator';
 
 describe('Calculator component', () => {
-
   test('Test Calculator render correctly', () => {
     const tree = renderer.create(<Calculator />).toJSON();
     expect(tree).toMatchSnapshot();
