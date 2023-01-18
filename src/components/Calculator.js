@@ -14,6 +14,7 @@ export default function Calculator() {
   return (
     <>
       <main className="container">
+        <h2>Prove it with some math!</h2>
         <div className="calculator-container">
           <div className="output">
             {total}

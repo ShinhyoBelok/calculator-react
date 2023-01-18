@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css2?family=Satisfy&display=swap);
+* {
+  font-family: "Satisfy", sans-serif;
+  font-size: 1.3rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 24px 0;
+}
+nav h1 {
+  font-size: 4rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
