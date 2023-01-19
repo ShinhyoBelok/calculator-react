@@ -51,7 +51,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[You can see our live demo](https://shinhyobelok.github.io/calculator-react/)
+[You can see our live demo](https://magic-math-calculator.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,7 +90,7 @@ To run the project, execute the following command:
 
 You can deploy this project using:
 
-[Deploy](https://shinhyobelok.github.io/calculator-react/)
+[Deploy](https://magic-math-calculator.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -121,7 +121,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/M1rn4/Set-up-adn-mobile-first/issues).
+Feel free to check the [issues page](https://github.com/ShinhyoBelok/calculator-react/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
