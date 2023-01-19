@@ -16,7 +16,7 @@ export default function Calculator() {
       <main className="container">
         <h2>Prove it with some math!</h2>
         <div className="calculator-container">
-          <div className="output">
+          <div className="output" data-testid="displayOutput">
             {total}
             {operation}
             {next}
